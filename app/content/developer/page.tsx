@@ -275,7 +275,7 @@ export default function Developer() {
     )
 }
 
-export const companies = [
+const companies = [
     {
         title: "South-East University",
         description:

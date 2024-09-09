@@ -248,7 +248,7 @@ export default function Artist() {
     )
 }
 
-export const projects = [
+const projects = [
     {
         title: "Collectwin",
         description:
