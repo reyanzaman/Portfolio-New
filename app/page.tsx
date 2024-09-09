@@ -1,101 +1,86 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main className="p-8 lg:pt-10 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
+
+        <div className="lg:pb-16 pb-10">
+          <h1 className="lg:text-6xl text-3xl text-center">Welcome to my portfolio</h1>
+          <h2 className="lg:text-2xl text-xl text-center lg:pt-4 pt-2">Pick your poison!</h2>
+        </div>
+
+        <div className="relative flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-6 w-full h-full">
+          {/* Card 1 */}
+          <Link href="/content/developer" className="w-full h-full">
+            <div className="w-full h-full lg:pl-12">
+              <div className={cn(
+                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
+                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover",
+                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725796817/Portfolio/coding_gif.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725796817/Portfolio/coding_gif.gif)]",
+                "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
+                "transition-all duration-500"
+              )}>
+                <div className="text relative z-50">
+                  <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">
+                    Coding & Development
+                  </h1>
+                  <p className="font-normal text-base text-gray-50 relative my-4 lg:block hidden">
+                    I like to focus primarily on Next.js and Tailwind CSS for Web Development
+                    along with Python for Artificial Intelligence & Machine Learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Logo */}
+          <div className="absolute z-50 mx-auto top-1/2 transform -translate-y-1/2 lg:left-1/2 lg:translate-x-[-50%]">
+            <div className="rounded-full border-4 border-gray-700 bg-gray-100 flex justify-center items-center shadow-lg shadow-cyan-500/50">
+              <Image src="https://res.cloudinary.com/dreac336r/image/upload/v1725802128/Portfolio/rz_logo.png"
+                alt="Logo"
+                width={130}
+                height={130}
+                className="translate-y-2 -translate-x-1 scale-110 hover:rotate-[20deg] transition-all duration-[3000ms] lg:block hidden"
+              />
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <Link href="/content/artist" className="w-full h-full">
+            <div className="w-full h-full lg:pr-12">
+              <div className={cn(
+                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
+                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801541/Portfolio/design_image.jpg)] bg-cover",
+                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801378/Portfolio/design_gif.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801378/Portfolio/design_gif.gif)]",
+                "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
+                "transition-all duration-500"
+              )}>
+                <div className="text relative z-50">
+                  <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">
+                    Art & Animations
+                  </h1>
+                  <p className="font-normal text-base text-gray-50 relative my-4 lg:block hidden">
+                    I do a variety of work ranging from 2D graphics design to 3D animations.
+                    Logos, brochures, 3D models, animations, you name it!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
+
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer>
+        <p className="text-center text-neutral-400 font-light text-sm">&copy; Khandoker Ashik Uz Zaman</p>
       </footer>
+
     </div>
   );
 }
