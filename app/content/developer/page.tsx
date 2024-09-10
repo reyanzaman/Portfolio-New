@@ -138,7 +138,7 @@ export default function Developer() {
 
             <div className="h-full w-full p-8 lg:pt-10 pt-0 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
 
-                <div className="mx-auto w-full flex items-center justify-center lg:pb-20 pb-0">
+                <div className="mx-auto w-full flex items-center justify-center lg:pb-20 pb-0 lg:mt-0 mt-10">
                     <div className="w-3/4 min-h-[75vh] max-h-[85vh] h-[90vh] px-1 md:px-8 flex flex-col text-center items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
 
                         <div className="lg:pb-20 lg:pt-20 pb-16 pt-0">
@@ -186,7 +186,7 @@ export default function Developer() {
                     </div>
                 </div>
 
-                <div className="lg:pb-20 lg:pt-20 pb-20 pt-0  text-center">
+                <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold text-white">
                         <span className="lg:block hidden">An unique blend of Data, Art & Artificial Intelligence</span> <br />
                         <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
