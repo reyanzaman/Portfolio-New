@@ -18,7 +18,7 @@ export default function Gallery() {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconHome className="h-full w-full text-neutral-300" />
             ),
             href: "/",
         },
@@ -26,14 +26,14 @@ export default function Gallery() {
         {
             title: "Programming",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconTerminal2 className="h-full w-full text-neutral-300" />
             ),
             href: "/content/developer",
         },
         {
             title: "Gallery",
             icon: (
-                <IconPhoto className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconPhoto className="h-full w-full text-neutral-300" />
             ),
             href: "/content/gallery",
         },
@@ -66,21 +66,21 @@ export default function Gallery() {
         {
             title: "Youtube",
             icon: (
-                <IconBrandYoutube className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandYoutube className="h-full w-full text-neutral-300" />
             ),
             href: "https://www.youtube.com/@ReyanZamanRZ",
         },
         {
             title: "Resume",
             icon: (
-                <IconFileSpark className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
             href: "https://drive.usercontent.google.com/u/0/uc?id=1ckMiBv5IsVxjmFr_eBD5hAJ5BPCDDA4v&export=download",
         },
         {
             title: "Contact",
             icon: (
-                <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconMail className="h-full w-full text-neutral-300" />
             ),
             href: "mailto:reyanzaman.rz@gmail.com",
         },

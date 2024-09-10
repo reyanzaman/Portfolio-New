@@ -43,7 +43,7 @@ export default function Artist() {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconHome className="h-full w-full text-neutral-300" />
             ),
             href: "/",
         },
@@ -51,14 +51,14 @@ export default function Artist() {
         {
             title: "Programming",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconTerminal2 className="h-full w-full text-neutral-300" />
             ),
             href: "/content/developer",
         },
         {
             title: "Gallery",
             icon: (
-                <IconPhoto className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconPhoto className="h-full w-full text-neutral-300" />
             ),
             href: "/content/gallery",
         },
@@ -91,21 +91,21 @@ export default function Artist() {
         {
             title: "Youtube",
             icon: (
-                <IconBrandYoutube className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandYoutube className="h-full w-full text-neutral-300" />
             ),
             href: "https://www.youtube.com/@ReyanZamanRZ",
         },
         {
             title: "Resume",
             icon: (
-                <IconFileSpark className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
             href: "https://drive.usercontent.google.com/u/0/uc?id=1ckMiBv5IsVxjmFr_eBD5hAJ5BPCDDA4v&export=download",
         },
         {
             title: "Contact",
             icon: (
-                <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconMail className="h-full w-full text-neutral-300" />
             ),
             href: "mailto:reyanzaman.rz@gmail.com",
         },
@@ -145,7 +145,7 @@ export default function Artist() {
                 <div className="flex lg:flex-row flex-col justify-center items-center lg:mb-20 mb-12">
                     <div className="flex flex-col">
                         <h1 className="lg:text-2xl text-base p-1">Starting From</h1>
-                        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">
                             3D modelling & Animations
                         </h2>
                         <h1 className="lg:text-2xl text-base p-2">Created With Top of The Line Tools</h1>
@@ -172,7 +172,7 @@ export default function Artist() {
                     />
                     <div className="flex flex-col pb-8 lg:px-6 order-1 lg:order-2">
                         <h1 className="lg:text-2xl text-base p-1">All The Way To</h1>
-                        <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                        <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
                             Graphics Design & 2D Art
                         </h2>
                         <h1 className="lg:text-2xl text-base p-2">For Advertisement, Games, Promotion & More </h1>
@@ -181,7 +181,7 @@ export default function Artist() {
 
                 <div className="lg:mb-20 mb-10">
                     <h1 className="lg:text-3xl text-base pb-1">What else do I have to offer?</h1>
-                    <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                    <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
                         Get a glimpse of my works.
                     </h2>
                     <Carousel items={cards} />
@@ -212,7 +212,7 @@ export default function Artist() {
                     </div>
                 </div>
 
-                <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
                     Tools I Use
                 </h2>
                 <h1 className="lg:text-3xl text-base pt-1">Professional tools helps create high quality products</h1>
@@ -235,7 +235,7 @@ export default function Artist() {
                     </GlareCard>
                 </div>
 
-                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">
                     Companies I have worked with
                 </h2>
                 <h1 className="lg:text-3xl text-base pt-3">Focusing on graphics & animations</h1>
@@ -292,10 +292,10 @@ const LogoContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Logos are the face of your brand.
                     </span>{" "}
                     It is the first thing that your audience will notice about your brand.
@@ -343,10 +343,10 @@ const FlyerContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Brochures & Flyers are a great way to promote your brand.
                     </span>{" "}
                     They are an effective way to showcase your products and services
@@ -379,10 +379,10 @@ const PosterContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Banners & Posters are a great way to promote your brand.
                     </span>{" "}
                     They are an effective way to showcase your products and services
@@ -436,10 +436,10 @@ const MenuContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Menu & Catalogues are a great way to showcase your products.
                     </span>{" "}
                     They are an effective way to showcase your products and services
@@ -479,10 +479,10 @@ const SocialMediaContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Social media posts are a great way to promote your brand.
                     </span>{" "}
                     It is a vital part of any marketing strategy and can help you reach
@@ -529,10 +529,10 @@ const CertificateContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Certificates are a great way to recognize your achievers.
                     </span>{" "}
                     They are an effective way to motivate your employees and show
@@ -557,10 +557,10 @@ const MockupContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         Mockups are a great way to visualize your ideas.
                     </span>{" "}
                     They are an effective way to showcase your products and services
@@ -605,10 +605,10 @@ const DContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         3D models and animations are a great way to bring your ideas to life.
                     </span>{" "}
                     3D models are used everywhere from movies and video games to product
@@ -676,10 +676,10 @@ const GameContent = () => {
         <>
             <div
                 key={"dummy-content"}
-                className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
-                <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-                    <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
                         2D game art is a classic artstyle is which still popular nowadays.
                     </span>{" "}
                     It is a great way to create unique and visually appealing game

@@ -13,22 +13,26 @@ export const TracingBeam = ({
   const contentRef = useRef<HTMLDivElement>(null);
   const [svgHeight, setSvgHeight] = useState(0);
 
-  // Dynamically update svgHeight based on content height
+  // Dynamically update svgHeight based on content height using ResizeObserver
   useEffect(() => {
     const updateHeight = () => {
       if (contentRef.current) {
         setSvgHeight(contentRef.current.offsetHeight);
       }
     };
-    updateHeight();
 
-    // Add event listener to update height on window resize
-    window.addEventListener("resize", updateHeight);
+    // Use ResizeObserver for more reliable content height updates
+    const observer = new ResizeObserver(updateHeight);
+    if (contentRef.current) {
+      observer.observe(contentRef.current);
+    }
 
     return () => {
-      window.removeEventListener("resize", updateHeight);
+      if (contentRef.current) {
+        observer.unobserve(contentRef.current);
+      }
     };
-  }, [contentRef.current?.offsetHeight]);
+  }, [contentRef]);
 
   // Track scrolling inside the specific content area (not the whole page)
   const { scrollYProgress } = useScroll({
@@ -67,7 +71,7 @@ export const TracingBeam = ({
               backgroundColor: scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
               borderColor: scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
             }}
-            className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
         <svg viewBox={`0 0 20 ${svgHeight}`} width="20" height={svgHeight} className="ml-4 block" aria-hidden="true">

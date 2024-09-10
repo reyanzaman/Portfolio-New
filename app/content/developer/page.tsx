@@ -27,7 +27,7 @@ export default function Developer() {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconHome className="h-full w-full text-neutral-300" />
             ),
             href: "/",
         },
@@ -35,28 +35,28 @@ export default function Developer() {
         {
             title: "Graphics",
             icon: (
-                <IconBrush className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrush className="h-full w-full text-neutral-300" />
             ),
             href: "/content/artist",
         },
         {
             title: "Github",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandGithub className="h-full w-full text-neutral-300" />
             ),
             href: "#",
         },
         {
             title: "Resume",
             icon: (
-                <IconFileSpark className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
             href: "https://drive.usercontent.google.com/u/0/uc?id=19x-uLY7773jbdZ9ZqjrVffFbT1J7o9C8&export=download",
         },
         {
             title: "Contact",
             icon: (
-                <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconMail className="h-full w-full text-neutral-300" />
             ),
             href: "mailto:reyanzaman.rz@gmail.com",
         },
@@ -100,9 +100,9 @@ export default function Developer() {
                 <FloatingDock items={links} />
             </div>
 
-            <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
+            <div className="lg:h-[40rem] h-[25rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
                 <div className="max-w-5xl mx-auto p-4">
-                    <h1 className="relative z-10 text-2xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                    <h1 className="relative z-10 text-2xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">
                         Khandoker Ashik Uz Zaman
                     </h1>
                     <p></p>
@@ -138,10 +138,10 @@ export default function Developer() {
 
             <div className="h-full w-full p-8 lg:pt-10 pt-0 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
 
-                <div className="mx-auto w-full flex items-center justify-center lg:mb-20 mb-8">
-                    <div className="w-3/4 h-[85vh] px-1 md:px-8 flex flex-col text-center items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
+                <div className="mx-auto w-full flex items-center justify-center lg:pb-20 pb-0">
+                    <div className="w-3/4 min-h-[75vh] max-h-[85vh] h-[90vh] px-1 md:px-8 flex flex-col text-center items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
 
-                        <div className="my-20">
+                        <div className="lg:pb-20 lg:pt-20 pb-16 pt-0">
                             <h1 className="lg:text-4xl text-base font-semibold text-white">
                                 Llama-3 A.I Powered Application <br />
                                 <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
@@ -155,7 +155,7 @@ export default function Developer() {
                             style={{
                                 transform: "rotateX(15deg) translateZ(80px)",
                             }}
-                            className="hidden lg:block p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 dark: mx-auto w-3/4 h-1/2 md:h-3/4 lg:mb-20 mb-10"
+                            className="hidden md:block p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 mx-auto w-[85%] h-[55rem]"
                         >
                             <Compare
                                 firstImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894484/Portfolio/paltaQv1.png"
@@ -171,7 +171,7 @@ export default function Developer() {
                             style={{
                                 transform: "rotateX(15deg) translateZ(80px)",
                             }}
-                            className="block lg:hidden p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 dark: mx-auto w-3/4 h-1/2 md:h-3/4 lg:mb-20 mb-10"
+                            className="block md:hidden p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 mx-auto w-[15rem] h-[28rem]"
                         >
                             <Compare
                                 firstImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894484/Portfolio/pqv1.png"
@@ -186,9 +186,9 @@ export default function Developer() {
                     </div>
                 </div>
 
-                <div className="my-20 text-center">
+                <div className="lg:pb-20 lg:pt-20 pb-20 pt-0  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold text-white">
-                        An unique blend of Data, Art & Artificial Intelligence <br />
+                        <span className="lg:block hidden">An unique blend of Data, Art & Artificial Intelligence</span> <br />
                         <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
                             Data Canvas
                         </span>
@@ -206,11 +206,11 @@ export default function Developer() {
                     />
                 </div>
 
-                <TracingBeam className="px-6">
+                <TracingBeam className="lg:pt-0 pt-8 lg:px-6 px-10">
                     <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                         {Content.map((item, index) => (
                             <div key={`content-${index}`} className="mb-10">
-                                <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+                                <h2 className="bg-indigo-700 text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                                     {item.badge}
                                 </h2>
 
@@ -218,7 +218,7 @@ export default function Developer() {
                                     {item.title}
                                 </p>
 
-                                <div className="text-sm  prose prose-sm dark:prose-invert">
+                                <div className="text-sm  prose prose-sm prose-invert">
                                     {item?.image && (
                                         <Image
                                             src={item.image}
@@ -236,41 +236,41 @@ export default function Developer() {
                 </TracingBeam>
             </div>
             <div>
-                <h2 className="text-center lg:text-4xl text-3xl font-bold pb-12 pt-20">Tech Stacks I Use Frequently</h2>
-                <div className="grid grid-cols-5 lg:pb-20 pb-10 flex flex-row items-center justify-items-center lg:w-1/2 mx-auto">
+                <h2 className="text-center lg:text-4xl text-2xl font-bold pb-12 pt-20">Tech Stacks I Use Frequently</h2>
+                <div className="grid grid-cols-5 lg:pb-20 pb-10 flex flex-row items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
                     <div className="flex flex-col items-center">
-                        <IconBrandNextjs className="h-12 w-12 text-white" />
+                        <IconBrandNextjs className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>Next JS</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandReact className="h-12 w-12 text-white" />
+                        <IconBrandReact className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>React JS</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandPython className="h-12 w-12 text-white" />
+                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>Python</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandTailwind className="h-12 w-12 text-white" />
+                        <IconBrandTailwind className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>Tailwind</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandTypescript className="h-12 w-12 text-white" />
+                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>Typescript</p>
                     </div>
                 </div>
             </div>
 
             <div className="text-center lg:pt-20 pt-10 pb-10">
-                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                <h2 className="max-w-7xl pl-4 mx-auto text-lg md:text-5xl font-bold text-neutral-200 font-sans">
                     Companies & Institutions I have worked with
                 </h2>
-                <h1 className="lg:text-3xl text-base pt-3">Focusing on A.I, Research & Web Development</h1>
+                <h1 className="lg:text-3xl text-sm pt-3">Focusing on A.I, Research & Web Development</h1>
                 <div className="max-w-5xl mx-auto px-8 lg:mb-10 mb-1">
                     <HoverEffect items={companies} />
                 </div>
             </div>
-            
+
         </div>
     )
 }
