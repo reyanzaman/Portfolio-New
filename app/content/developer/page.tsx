@@ -9,7 +9,6 @@ import {
     IconBrush,
     IconFileSpark,
     IconBrandNextjs,
-    IconBrandReact,
     IconBrandPython,
     IconBrandTailwind,
     IconBrandTypescript,
@@ -237,26 +236,26 @@ export default function Developer() {
             </div>
             <div>
                 <h2 className="text-center lg:text-4xl text-2xl font-bold pb-12 pt-20">Tech Stacks I Use Frequently</h2>
-                <div className="grid grid-cols-5 lg:pb-20 pb-10 flex flex-row items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
+                <div className="grid grid-cols-4 lg:pb-20 pb-10 flex flex-row items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
                     <div className="flex flex-col items-center">
                         <IconBrandNextjs className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
-                        <p>Next JS</p>
+                        <p>Next JS 14</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    {/* <div className="flex flex-col items-center">
                         <IconBrandReact className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>React JS</p>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col items-center">
-                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
-                        <p>Python</p>
+                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <p>Typescript</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <IconBrandTailwind className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>Tailwind</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
-                        <p>Typescript</p>
+                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <p>Python</p>
                     </div>
                 </div>
             </div>
