@@ -150,7 +150,7 @@ export default function Developer() {
                             <h1 className="lg:text-3xl pt-2 text-base font-semibold text-neutral-100">
                                 Llama-3 A.I Powered Application <br />
                             </h1>
-                            <div className="lg:block hidden text-xl pt-2">Two versions made with Next JS and React</div>
+                            <div className="lg:block hidden text-xl pt-2">Two versions - Made with Next JS and React</div>
                         </div>
 
                         <div
@@ -190,11 +190,13 @@ export default function Developer() {
 
                 <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold text-white">
+                        <Link href="https://colab.research.google.com/drive/1U4CGeMngyVgLcv2Fdpt9OVOP5cjpyLRo?usp=sharing" target="blank">
                         <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
                             Data Canvas
                         </span>
+                        </Link>
                         <br />
-                        <span className="lg:block hidden pt-2 text-neutral-400">An unique blend of Data, Art & Artificial Intelligence</span>
+                        <span className="lg:block hidden pt-2 text-neutral-400">An Unique Blend of Data, Art & Artificial Intelligence</span>
                         <div className="lg:text-xl text-base text-neutral-400 pt-2">Presented at Facialescape Art Exhibition</div>
                     </h1>
                 </div>
@@ -304,6 +306,8 @@ const Content = [
         title: "Bus Management System",
         description: (
             <>
+                <Link href="https://iubbms.weebly.com/" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Website</Link>
+                <br></br><br></br>
                 <p className="text-justify text-base">
                     This website is a bus management system that allows users to book bus
                     tickets online. It has a user-friendly interface that allows users to
@@ -336,6 +340,8 @@ const Content = [
         title: "PDF-GPT Chatbot",
         description: (
             <>
+                <Link href="https://github.com/reyanzaman/PDF-GPT-Chatbot" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Github Repository</Link>
+                <br></br><br></br>
                 <p className="text-justify text-base">
                     This project is an extention to the GPT-3 chatbot that allows users to
                     upload Bangla PDF files and ask questions in Bangla. The chatbot uses GPT-3
