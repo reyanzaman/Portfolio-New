@@ -314,21 +314,64 @@ const LogoContent = () => {
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/forex.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Logo"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/kajkey.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Logo"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/metis.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Logo"
+                    height="500"
+                    width="500"
+                    className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
+                />
+            </div>
+        </>
+    );
+};
+
+const MerchandiseContent = () => {
+    return (
+        <>
+            <div
+                key={"dummy-content"}
+                className="bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+            >
+                <p className="text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                    <span className="font-bold text-neutral-200">
+                        Merchandise design is a great way to promote your brand.
+                    </span>{" "}
+                    It is an effective way to showcase your products and services and
+                    attract new customers. I can help you create eye-catching and
+                    professional merchandise designs or templates that will help you stand out from
+                    the competition. Below, you will find some of the merchandise designs that I have
+                    created for my client.
+                </p>
+                <Image
+                    src="https://res.cloudinary.com/dreac336r/image/upload/v1727224353/Portfolio/nft_img2.png"
+                    alt="Merchandise design"
+                    height="500"
+                    width="500"
+                    className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
+                />
+                <Image
+                    src="https://res.cloudinary.com/dreac336r/image/upload/v1727224353/Portfolio/nft_img3.png"
+                    alt="Merchandise design"
+                    height="500"
+                    width="500"
+                    className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
+                />
+                <Image
+                    src="https://res.cloudinary.com/dreac336r/image/upload/v1727224353/Portfolio/nft_img4.png"
+                    alt="Merchandise design"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -357,14 +400,14 @@ const FlyerContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_flyer.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Flyer"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/hw_flyer.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Flyer"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -393,35 +436,35 @@ const PosterContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_print_banner.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Poster"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_banner.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Poster"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cnc_banner.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Poster"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/mmit_banner.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Poster"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/mmit_drone_banner.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Poster"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -450,21 +493,21 @@ const MenuContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/mmss_menu.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Menu"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/hw_catalog.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Menu"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/kings_menu.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Menu"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -493,28 +536,28 @@ const SocialMediaContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/anthro_sm.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Social Media Content"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/adex_sm.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Social Media Content"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cnf_sm.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Social Media Content"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_sm.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Social Media Content"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -542,7 +585,7 @@ const CertificateContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3mt_cert.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Certificate"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -569,28 +612,28 @@ const MockupContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_mockup1.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Mockup"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_mockup2.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Mockup"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/docacola_cap.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Mockup"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/docacola_mug.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="Mockup"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -619,49 +662,49 @@ const DContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_1.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_2.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_3.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_4.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_5.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_6.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/3d_7.jpg"
-                    alt="Hyperbridge Logo"
+                    alt="3D model"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -690,28 +733,28 @@ const GameContent = () => {
                 </p>
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725859809/Portfolio/game1.png"
-                    alt="Macbook mockup from Aceternity UI"
+                    alt="Game Contet"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725859809/Portfolio/game2.png"
-                    alt="Macbook mockup from Aceternity UI"
+                    alt="Game Contet"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725859809/Portfolio/game3.png"
-                    alt="Macbook mockup from Aceternity UI"
+                    alt="Game Contet"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725859809/Portfolio/game4.png"
-                    alt="Macbook mockup from Aceternity UI"
+                    alt="Game Contet"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
@@ -751,6 +794,12 @@ const data = [
         title: "Product & service promotion made easy.",
         src: "https://res.cloudinary.com/dreac336r/image/upload/v1725852098/Portfolio/hereway_poster.png",
         content: <PosterContent />,
+    },
+    {
+        category: "Merchandise Templates",
+        title: "Create your own merchandise.",
+        src: "https://res.cloudinary.com/dreac336r/image/upload/v1727224353/Portfolio/nft_img1.png",
+        content: <MerchandiseContent />,
     },
     {
         category: "Brochures/Flyers",

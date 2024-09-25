@@ -13,15 +13,15 @@ export default function Home() {
           <h2 className="lg:text-2xl text-xl text-center lg:pt-4 pt-2">Pick your poison!</h2>
         </div>
 
-        <div className="relative flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-6 w-full h-full">
+        <div className="relative flex lg:flex-row flex-col items-center justify-center lg:gap-10 gap-6 w-fit mx-auto h-full">
           {/* Card 1 */}
           <Link href="/content/developer" className="w-full h-full">
-            <div className="w-full h-full lg:pl-12">
+            <div className="w-full h-full lg:pl-12 max-w-[45em]">
               <div className={cn(
                 "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
                 "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover",
-                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725796817/Portfolio/coding_gif.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725796817/Portfolio/coding_gif.gif)]",
+                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)]",
                 "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
                 "transition-all duration-500"
               )}>
@@ -52,12 +52,12 @@ export default function Home() {
 
           {/* Card 2 */}
           <Link href="/content/artist" className="w-full h-full">
-            <div className="w-full h-full lg:pr-12">
+            <div className="w-full h-full lg:pr-12 max-w-[45em]">
               <div className={cn(
                 "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
                 "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801541/Portfolio/design_image.jpg)] bg-cover",
-                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801378/Portfolio/design_gif.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801378/Portfolio/design_gif.gif)]",
+                "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221453/Portfolio/design_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221453/Portfolio/design_1.gif)]",
                 "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
                 "transition-all duration-500"
               )}>

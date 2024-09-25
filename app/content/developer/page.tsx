@@ -19,6 +19,7 @@ import { TracingBeam } from "@/app/component/tracing-beam";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import { HoverEffect } from "@/app/component/hover";
+import Link from "next/link";
 
 export default function Developer() {
 
@@ -141,13 +142,15 @@ export default function Developer() {
                     <div className="w-3/4 min-h-[75vh] max-h-[85vh] h-[90vh] px-1 md:px-8 flex flex-col text-center items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
 
                         <div className="lg:pb-20 lg:pt-20 pb-16 pt-0">
-                            <h1 className="lg:text-4xl text-base font-semibold text-white">
-                                Llama-3 A.I Powered Application <br />
-                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                            <Link href="https://palta-q.com/" target="blank">
+                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-indigo-400">
                                     Palta Question
                                 </span>
-                                <div className="lg:text-xl text-base pt-3 text-neutral-600">Version 1 & Version 2</div>
+                            </Link>
+                            <h1 className="lg:text-3xl pt-2 text-base font-semibold text-neutral-100">
+                                Llama-3 A.I Powered Application <br />
                             </h1>
+                            <div className="lg:block hidden text-xl pt-2">Two versions made with Next JS and React</div>
                         </div>
 
                         <div
@@ -157,8 +160,8 @@ export default function Developer() {
                             className="hidden md:block p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 mx-auto w-[85%] h-[55rem]"
                         >
                             <Compare
-                                firstImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894484/Portfolio/paltaQv1.png"
-                                secondImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/paltaQv2.jpg"
+                                secondImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894484/Portfolio/paltaQv1.png"
+                                firstImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/paltaQv2.jpg"
                                 firstImageClassName="object-cover object-left-top w-full"
                                 secondImageClassname="object-cover object-left-top w-full"
                                 className="w-full h-full rounded-[22px] md:rounded-lg"
@@ -187,11 +190,12 @@ export default function Developer() {
 
                 <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold text-white">
-                        <span className="lg:block hidden">An unique blend of Data, Art & Artificial Intelligence</span> <br />
                         <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
                             Data Canvas
                         </span>
-                        <div className="lg:text-xl text-base pt-3 text-neutral-600">Presented at Facialescape Art Exhibition</div>
+                        <br />
+                        <span className="lg:block hidden pt-2 text-neutral-400">An unique blend of Data, Art & Artificial Intelligence</span>
+                        <div className="lg:text-xl text-base text-neutral-400 pt-2">Presented at Facialescape Art Exhibition</div>
                     </h1>
                 </div>
                 <div className="flex items-center justify-center lg:pb-20 pb-10">
