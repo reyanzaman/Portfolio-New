@@ -187,7 +187,7 @@ export default function Artist() {
                     <Carousel items={cards} />
                 </div>
 
-                <div className="flex flex-col lg:flex-row w-full lg:mb-20 mb-10">
+                <div className="flex flex-col lg:flex-row w-full lg:mb-20 mb-10 mx-auto max-w-[100em]">
                     <div className="p-6 lg:w-1/2 w-full">
                         <iframe
                             width="100%"
@@ -216,7 +216,7 @@ export default function Artist() {
                     Tools I Use
                 </h2>
                 <h1 className="lg:text-3xl text-base pt-1">Professional tools helps create high quality products</h1>
-                <div className="grid lg:grid-cols-4 grid-cols-1 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center">
+                <div className="grid lg:grid-cols-4 grid-cols-1 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center mx-auto max-w-[80em]">
                     <GlareCard className="flex flex-col items-center justify-center">
                         <IconBrandAdobePhotoshop className="text-white scale-150" />
                         <p className="text-white font-bold text-xl mt-4">Photoshop</p>
