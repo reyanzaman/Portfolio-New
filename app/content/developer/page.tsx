@@ -157,7 +157,7 @@ export default function Developer() {
                             style={{
                                 transform: "rotateX(15deg) translateZ(80px)",
                             }}
-                            className="hidden md:block p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 mx-auto w-[85%] h-[55rem]"
+                            className="hidden md:block p-1 md:p-4 border rounded-3xl bg-neutral-900 border-neutral-8000 mx-auto w-[85%] h-[55rem] max-w-[55rem]"
                         >
                             <Compare
                                 secondImage="https://res.cloudinary.com/dreac336r/image/upload/v1725894484/Portfolio/paltaQv1.png"
