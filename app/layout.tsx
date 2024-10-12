@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Reyan Zaman (KAUZ)",
   description: "Portfolio of Khandoker Ashik Uz Zaman",
 };
 
