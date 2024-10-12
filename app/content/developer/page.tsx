@@ -143,7 +143,7 @@ export default function Developer() {
 
                         <div className="lg:pb-20 lg:pt-20 pb-16 pt-0">
                             <Link href="https://palta-q.com/" target="blank">
-                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-indigo-400">
+                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                                     Palta Question
                                 </span>
                             </Link>
@@ -302,6 +302,23 @@ const companies = [
 ];
 
 const Content = [
+    {
+        title: "Shilpi Qayyum Chowdhury Foundation",
+        description: (
+            <>
+                <Link href="https://sqcf.vercel.app/" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Website</Link>
+                <br></br><br></br>
+                <p className="text-justify text-base">
+                    The SQCF website focuses on the life and work of the famous Bangladeshi artist Qayyum Chowdhury.
+                    It provides a platform for art enthusiasts to learn about his work, view his art, and know more about
+                    the foundation preserving his life's work.
+                </p>
+            </>
+        ),
+        badge: "Next JS",
+        image:
+            "https://res.cloudinary.com/dreac336r/image/upload/v1728706307/Portfolio/sqcf.png",
+    },
     {
         title: "Bus Management System",
         description: (
