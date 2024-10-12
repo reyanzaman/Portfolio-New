@@ -311,7 +311,7 @@ const Content = [
                 <p className="text-justify text-base">
                     The SQCF website focuses on the life and work of the famous Bangladeshi artist Qayyum Chowdhury.
                     It provides a platform for art enthusiasts to learn about his work, view his art, and know more about
-                    the foundation preserving his life's work.
+                    the foundation preserving his life&apos;s work.
                 </p>
             </>
         ),
