@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Reyan Zaman (KAUZ)",
-  description: "Portfolio of  Reyan Zaman (KAUZ)",
+  description: "Portfolio of  Reyan Zaman (Khandoker Ashik Uz Zaman)",
   openGraph: {
     title: "Reyan Zaman (KAUZ)",
     description: "Portfolio of Reyan Zaman (KAUZ)",
