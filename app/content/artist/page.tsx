@@ -22,6 +22,23 @@ import { Compare } from "@/app/component/compare";
 import { GlareCard } from "@/app/component/glare-card";
 import { HoverEffect } from "@/app/component/hover";
 
+export const metadata = {
+    title: "Reyan Zaman (KAUZ)",
+    description: "Artist Portfolio of Reyan Zaman (KAUZ)",
+    openGraph: {
+      title: "Artist Portfolio - Reyan Zaman (KAUZ)",
+      description: "Artist Portfolio of Reyan Zaman (KAUZ)",
+      images: [
+        {
+          url: "https://res.cloudinary.com/dreac336r/image/upload/v1733926322/Portfolio/KAUZ.png",
+          width: 950,
+          height: 640,
+          alt: "Reyan Zaman (Khandoker Ashik Uz Zaman)",
+        },
+      ],
+    },
+  };
+
 export default function Artist() {
 
     const words = [
@@ -145,7 +162,7 @@ export default function Artist() {
                 <div className="flex lg:flex-row flex-col justify-center items-center lg:mb-20 mb-12">
                     <div className="flex flex-col">
                         <h1 className="lg:text-2xl text-base p-1">Starting From</h1>
-                        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">
+                        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                             3D modelling & Animations
                         </h2>
                         <h1 className="lg:text-2xl text-base p-2">Created With Top of The Line Tools</h1>
@@ -172,16 +189,16 @@ export default function Artist() {
                     />
                     <div className="flex flex-col pb-8 lg:px-6 order-1 lg:order-2">
                         <h1 className="lg:text-2xl text-base p-1">All The Way To</h1>
-                        <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
+                        <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                             Graphics Design & 2D Art
                         </h2>
                         <h1 className="lg:text-2xl text-base p-2">For Advertisement, Games, Promotion & More </h1>
                     </div>
                 </div>
 
-                <div className="lg:mb-20 mb-10">
+                <div className="lg:mb-20 mb-10 lg:pt-10">
                     <h1 className="lg:text-3xl text-base pb-1">What else do I have to offer?</h1>
-                    <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
+                    <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                         Get a glimpse of my works.
                     </h2>
                     <Carousel items={cards} />
@@ -212,11 +229,11 @@ export default function Artist() {
                     </div>
                 </div>
 
-                <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-200 font-sans">
+                <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                     Tools I Use
                 </h2>
                 <h1 className="lg:text-3xl text-base pt-1">Professional tools helps create high quality products</h1>
-                <div className="grid lg:grid-cols-4 grid-cols-1 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center mx-auto max-w-[80em]">
+                <div className="grid lg:grid-cols-4 grid-cols-2 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center mx-auto lg:px-8">
                     <GlareCard className="flex flex-col items-center justify-center">
                         <IconBrandAdobePhotoshop className="text-white scale-150" />
                         <p className="text-white font-bold text-xl mt-4">Photoshop</p>
@@ -235,11 +252,10 @@ export default function Artist() {
                     </GlareCard>
                 </div>
 
-                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-200 font-sans">
-                    Companies I have worked with
+                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pt-8">
+                    Previous Work Experience
                 </h2>
-                <h1 className="lg:text-3xl text-base pt-3">Focusing on graphics & animations</h1>
-                <div className="max-w-5xl mx-auto px-8 lg:mb-10 mb-1">
+                <div className="mx-auto lg:px-8 lg:mb-10 mb-1">
                     <HoverEffect items={projects} />
                 </div>
 

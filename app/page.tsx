@@ -2,6 +2,23 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Reyan Zaman (KAUZ)",
+  description: "Home Page of Reyan Zaman (KAUZ)",
+  openGraph: {
+    title: "Home Page of Reyan Zaman (KAUZ)",
+    description: "Home Page of Portfolio of Reyan Zaman (KAUZ)",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dreac336r/image/upload/v1733926322/Portfolio/KAUZ.png",
+        width: 950,
+        height: 640,
+        alt: "Reyan Zaman (Khandoker Ashik Uz Zaman)",
+      },
+    ],
+  },
+};
+
 export default function Home() {
   return (
     <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
@@ -19,9 +36,9 @@ export default function Home() {
             <div className="w-full h-full lg:pl-12 max-w-[45em]">
               <div className={cn(
                 "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
-                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover",
+                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover bg-center",
                 "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] hover:bg-center",
                 "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
                 "transition-all duration-500"
               )}>
@@ -55,9 +72,9 @@ export default function Home() {
             <div className="w-full h-full lg:pr-12 max-w-[45em]">
               <div className={cn(
                 "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
-                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801541/Portfolio/design_image.jpg)] bg-cover",
+                "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725801541/Portfolio/design_image.jpg)] bg-cover bg-center",
                 "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221453/Portfolio/design_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
-                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221453/Portfolio/design_1.gif)]",
+                "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221453/Portfolio/design_1.gif)] hover:bg-center",
                 "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-15",
                 "transition-all duration-500"
               )}>

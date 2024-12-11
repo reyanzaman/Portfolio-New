@@ -21,6 +21,23 @@ import Image from "next/image";
 import { HoverEffect } from "@/app/component/hover";
 import Link from "next/link";
 
+export const metadata = {
+    title: "Reyan Zaman (KAUZ)",
+    description: "Developer Portfolio of Reyan Zaman (KAUZ)",
+    openGraph: {
+      title: "Developer Portfolio - Reyan Zaman (KAUZ)",
+      description: "Developer Portfolio of Reyan Zaman (KAUZ)",
+      images: [
+        {
+          url: "https://res.cloudinary.com/dreac336r/image/upload/v1733926322/Portfolio/KAUZ.png",
+          width: 950,
+          height: 640,
+          alt: "Reyan Zaman (Khandoker Ashik Uz Zaman)",
+        },
+      ],
+    },
+  };
+
 export default function Developer() {
 
     const links = [
@@ -112,21 +129,21 @@ export default function Developer() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-3 mt-20 pt-6 gap-y-6">
+                <div className="grid lg:grid-cols-3 grid-cols-3 lg:mt-20 mt-0 pt-6 gap-y-6 px-6">
                     <div className="flex flex-row items-center justify-items-center justify-center">
-                        <h1 className="relative z-10 text-3xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                        <h1 className="relative z-10 text-2xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
                             {Math.floor(experience)}
                         </h1>
                         <p className="text-neutral-500 md:text-lg text-[10px] relative z-10 w-1/2 lg:px-3 px-2 pt-1">Year of Experience</p>
                     </div>
                     <div className="flex flex-row items-center justify-items-center justify-center">
-                        <h1 className="relative z-10 text-3xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                        <h1 className="relative z-10 text-2xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
                             {Math.floor(commits)}+
                         </h1>
                         <p className="text-neutral-500 md:text-lg text-[10px] relative z-10 w-1/2 lg:px-3 px-1 pt-1">Github Commits</p>
                     </div>
                     <div className="flex flex-row items-center justify-items-center justify-center">
-                        <h1 className="relative z-10 text-3xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                        <h1 className="relative z-10 text-2xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
                             {Math.floor(projects)}+
                         </h1>
                         <p className="text-neutral-500 md:text-lg text-[10px] relative z-10 w-1/2 lg:px-3 px-1 pt-1">Projects Completed</p>
@@ -136,7 +153,7 @@ export default function Developer() {
                 <BackgroundBeams />
             </div>
 
-            <div className="h-full w-full p-8 lg:pt-10 pt-10 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
+            <div className="h-full w-full p-8 lg:pt-10 pt-3 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
 
                 <div className="mx-auto w-full flex items-center justify-center lg:pb-20 pb-0 lg:mt-0 mt-10">
                     <div className="w-3/4 min-h-[75vh] max-h-[85vh] h-[90vh] px-1 md:px-8 flex flex-col text-center items-center justify-center [perspective:800px] [transform-style:preserve-3d]">
@@ -147,10 +164,10 @@ export default function Developer() {
                                     Palta Question
                                 </span>
                             </Link>
-                            <h1 className="lg:text-3xl pt-2 text-base font-semibold text-neutral-100">
+                            <h1 className="lg:text-3xl pt-2 text-base font-semibold text-neutral-800 dark:text-neutral-400">
                                 Llama-3 A.I Powered Application <br />
                             </h1>
-                            <div className="lg:block hidden text-xl pt-2">Two versions - Made with Next JS and React</div>
+                            <div className="lg:block hidden text-xl pt-2 text-neutral-800 dark:text-neutral-400">Two versions - Made with Next JS and React</div>
                         </div>
 
                         <div
@@ -189,15 +206,15 @@ export default function Developer() {
                 </div>
 
                 <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
-                    <h1 className="lg:text-2xl text-base font-semibold text-white">
+                    <h1 className="lg:text-2xl text-base font-semibold">
                         <Link href="https://colab.research.google.com/drive/1U4CGeMngyVgLcv2Fdpt9OVOP5cjpyLRo?usp=sharing" target="blank">
                         <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
                             Data Canvas
                         </span>
                         </Link>
                         <br />
-                        <span className="lg:block hidden pt-2 text-neutral-400">An Unique Blend of Data, Art & Artificial Intelligence</span>
-                        <div className="lg:text-xl text-base text-neutral-400 pt-2">Presented at Facialescape Art Exhibition</div>
+                        <span className="lg:block hidden pt-2 text-neutral-800 dark:text-neutral-400">An Unique Blend of Data, Art & Artificial Intelligence</span>
+                        <div className="lg:text-xl text-base text-neutral-800 dark:text-neutral-400 pt-2">Presented at Facialescape Art Exhibition</div>
                     </h1>
                 </div>
                 <div className="flex items-center justify-center lg:pb-20 pb-10">
@@ -214,7 +231,7 @@ export default function Developer() {
                 <TracingBeam className="lg:pt-0 pt-8 lg:px-6 px-10">
                     <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                         {Content.map((item, index) => (
-                            <div key={`content-${index}`} className="mb-10">
+                            <div key={`content-${index}`} className="lg:mb-10 mb-6">
                                 <h2 className="bg-indigo-700 text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                                     {item.badge}
                                 </h2>
@@ -242,9 +259,9 @@ export default function Developer() {
             </div>
             <div>
                 <h2 className="text-center lg:text-4xl text-2xl font-bold pb-12 pt-20">Tech Stacks I Use Frequently</h2>
-                <div className="grid grid-cols-4 lg:pb-20 pb-10 flex flex-row items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
+                <div className="grid grid-cols-4 lg:pb-20 pb-10 items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
                     <div className="flex flex-col items-center">
-                        <IconBrandNextjs className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <IconBrandNextjs className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
                         <p>Next JS 14</p>
                     </div>
                     {/* <div className="flex flex-col items-center">
@@ -252,22 +269,22 @@ export default function Developer() {
                         <p>React JS</p>
                     </div> */}
                     <div className="flex flex-col items-center">
-                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
                         <p>Typescript</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandTailwind className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <IconBrandTailwind className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
                         <p>Tailwind</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
+                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
                         <p>Python</p>
                     </div>
                 </div>
             </div>
 
             <div className="text-center lg:pt-20 pt-10 pb-10">
-                <h2 className="max-w-7xl pl-4 mx-auto text-lg md:text-5xl font-bold text-neutral-200 font-sans">
+                <h2 className="max-w-7xl pl-4 mx-auto text-lg md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                     Companies & Institutions I have worked with
                 </h2>
                 <h1 className="lg:text-3xl text-sm pt-3">Focusing on A.I, Research & Web Development</h1>
@@ -306,7 +323,7 @@ const Content = [
         title: "Shilpi Qayyum Chowdhury Foundation",
         description: (
             <>
-                <Link href="https://sqcf.vercel.app/" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Website</Link>
+                <Link href="https://sqcf.vercel.app/" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-600 font-bold">View Website</Link>
                 <br></br><br></br>
                 <p className="text-justify text-base">
                     The SQCF website focuses on the life and work of the famous Bangladeshi artist Qayyum Chowdhury.
@@ -323,7 +340,7 @@ const Content = [
         title: "Bus Management System",
         description: (
             <>
-                <Link href="https://iubbms.weebly.com/" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Website</Link>
+                <Link href="https://iubbms.weebly.com/" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-60 font-bold">View Website</Link>
                 <br></br><br></br>
                 <p className="text-justify text-base">
                     This website is a bus management system that allows users to book bus
@@ -357,7 +374,7 @@ const Content = [
         title: "PDF-GPT Chatbot",
         description: (
             <>
-                <Link href="https://github.com/reyanzaman/PDF-GPT-Chatbot" target="blank" className="pt-3 text-sm text-indigo-300 font-bold">View Github Repository</Link>
+                <Link href="https://github.com/reyanzaman/PDF-GPT-Chatbot" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-60 font-bold">View Github Repository</Link>
                 <br></br><br></br>
                 <p className="text-justify text-base">
                     This project is an extention to the GPT-3 chatbot that allows users to

@@ -15,7 +15,19 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Reyan Zaman (KAUZ)",
-  description: "Portfolio of Khandoker Ashik Uz Zaman",
+  description: "Portfolio of  Reyan Zaman (KAUZ)",
+  openGraph: {
+    title: "Reyan Zaman (KAUZ)",
+    description: "Portfolio of Reyan Zaman (KAUZ)",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dreac336r/image/upload/v1733926322/Portfolio/KAUZ.png",
+        width: 950,
+        height: 640,
+        alt: "Reyan Zaman (Khandoker Ashik Uz Zaman)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

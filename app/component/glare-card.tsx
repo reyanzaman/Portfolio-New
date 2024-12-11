@@ -34,7 +34,7 @@ export const GlareCard = ({
     "--duration": "300ms",
     "--foil-size": "100%",
     "--opacity": "0",
-    "--radius": "48px",
+    "--radius": "18px",
     "--easing": "ease",
     "--transition": "var(--duration) var(--easing)",
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
