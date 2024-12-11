@@ -22,23 +22,6 @@ import { Compare } from "@/app/component/compare";
 import { GlareCard } from "@/app/component/glare-card";
 import { HoverEffect } from "@/app/component/hover";
 
-export const metadata = {
-    title: "Reyan Zaman (KAUZ)",
-    description: "Artist Portfolio of Reyan Zaman (KAUZ)",
-    openGraph: {
-      title: "Artist Portfolio - Reyan Zaman (KAUZ)",
-      description: "Artist Portfolio of Reyan Zaman (KAUZ)",
-      images: [
-        {
-          url: "https://res.cloudinary.com/dreac336r/image/upload/v1733926322/Portfolio/KAUZ.png",
-          width: 950,
-          height: 640,
-          alt: "Reyan Zaman (Khandoker Ashik Uz Zaman)",
-        },
-      ],
-    },
-  };
-
 export default function Artist() {
 
     const words = [
