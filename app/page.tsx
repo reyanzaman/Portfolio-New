@@ -35,7 +35,7 @@ export default function Home() {
           <Link href="/content/developer" className="w-full h-full">
             <div className="w-full h-full lg:pl-12 max-w-[45em]">
               <div className={cn(
-                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
+                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800 opacity-95",
                 "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover bg-center",
                 "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
                 "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] hover:bg-center",
@@ -62,7 +62,7 @@ export default function Home() {
                 alt="Logo"
                 width={130}
                 height={130}
-                className="translate-y-2 -translate-x-1 scale-110 hover:rotate-[20deg] transition-all duration-[3000ms] lg:block hidden"
+                className="translate-y-2 -translate-x-1 scale-110 hover:rotate-[360deg] transition-all duration-[3000ms] lg:block hidden"
               />
             </div>
           </div>

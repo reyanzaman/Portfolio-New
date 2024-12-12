@@ -88,8 +88,8 @@ export default function Developer() {
             }, duration / steps);
         };
 
-        countUp(setExperience, 3);
-        countUp(setCommits, 450);
+        countUp(setExperience, 4);
+        countUp(setCommits, 500);
         countUp(setProjects, 10);
 
     }, []);
@@ -191,9 +191,9 @@ export default function Developer() {
                 <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold">
                         <Link href="https://colab.research.google.com/drive/1U4CGeMngyVgLcv2Fdpt9OVOP5cjpyLRo?usp=sharing" target="blank">
-                        <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
-                            Data Canvas
-                        </span>
+                            <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
+                                Data Canvas
+                            </span>
                         </Link>
                         <br />
                         <span className="lg:block hidden pt-2 text-neutral-800 dark:text-neutral-400">An Unique Blend of Data, Art & Artificial Intelligence</span>
@@ -240,37 +240,38 @@ export default function Developer() {
                     </div>
                 </TracingBeam>
             </div>
-            <div>
-                <h2 className="text-center lg:text-4xl text-2xl font-bold pb-12 pt-20">Tech Stacks I Use Frequently</h2>
-                <div className="grid grid-cols-4 lg:pb-20 pb-10 items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
+
+            <div className="px-3">
+                <h2 className="text-center text-2xl md:text-5xl font-bold pb-12 pt-20">Favorite Tech Stacks</h2>
+                <div className="grid lg:grid-cols-4 grid-cols-2 gap-y-8 lg:pb-20 pb-10 items-center justify-items-center max-w-3xl lg:w-1/2 lg:px-0 px-6 mx-auto">
                     <div className="flex flex-col items-center">
-                        <IconBrandNextjs className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
-                        <p>Next JS 14</p>
+                        <IconBrandNextjs className="lg:h-16 lg:w-16 h-12 w-12 text-neutral-800 dark:text-white" />
+                        <p className="pt-2 font-bold">Next JS 14</p>
                     </div>
                     {/* <div className="flex flex-col items-center">
                         <IconBrandReact className="lg:h-12 lg:w-12 h-8 w-8 text-white" />
                         <p>React JS</p>
                     </div> */}
                     <div className="flex flex-col items-center">
-                        <IconBrandTypescript className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
-                        <p>Typescript</p>
+                        <IconBrandTypescript className="lg:h-16 lg:w-16 h-12 w-12 text-neutral-800 dark:text-white" />
+                        <p className="pt-2 font-bold">Typescript</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandTailwind className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
-                        <p>Tailwind</p>
+                        <IconBrandTailwind className="lg:h-16 lg:w-16 h-12 w-12 text-neutral-800 dark:text-white" />
+                        <p className="pt-2 font-bold">Tailwind</p>
                     </div>
                     <div className="flex flex-col items-center">
-                        <IconBrandPython className="lg:h-12 lg:w-12 h-8 w-8 text-neutral-800 dark:text-white" />
-                        <p>Python</p>
+                        <IconBrandPython className="lg:h-16 lg:w-16 h-12 w-12 text-neutral-800 dark:text-white" />
+                        <p className="pt-2 font-bold">Python</p>
                     </div>
                 </div>
             </div>
 
-            <div className="text-center lg:pt-20 pt-10 pb-10">
-                <h2 className="max-w-7xl pl-4 mx-auto text-lg md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                    Companies & Institutions I have worked with
+            <div className="text-center lg:pt-16 pt-10 pb-10 px-3">
+                <h2 className="pl-4 mx-auto text-3xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+                    Previous Work Experience
                 </h2>
-                <h1 className="lg:text-3xl text-sm pt-3">Focusing on A.I, Research & Web Development</h1>
+                <h1 className="lg:text-3xl text-sm pt-3 lg:block hidden">Focusing on A.I, Research & Web Development</h1>
                 <div className="max-w-5xl mx-auto px-8 lg:mb-10 mb-1">
                     <HoverEffect items={companies} />
                 </div>
@@ -401,6 +402,6 @@ const Content = [
         ),
         badge: "Python",
         image:
-            "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/classifier.png",
+            "https://res.cloudinary.com/dreac336r/image/upload/v1734040209/Portfolio/QuBAN_Classifier.png",
     },
 ];

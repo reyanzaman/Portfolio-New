@@ -213,10 +213,11 @@ export default function Artist() {
                 </div>
 
                 <h2 className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-                    Tools I Use
+                    My Tools of Expertise
                 </h2>
                 <h1 className="lg:text-3xl text-base pt-1">Professional tools helps create high quality products</h1>
-                <div className="grid lg:grid-cols-4 grid-cols-2 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center mx-auto lg:px-8">
+
+                <div className="max-w-[1500px] grid lg:grid-cols-4 grid-cols-2 pt-8 lg:mb-20 mb-10 gap-x-8 gap-y-8 justify-items-center mx-auto lg:px-8">
                     <GlareCard className="flex flex-col items-center justify-center">
                         <IconBrandAdobePhotoshop className="text-white scale-150" />
                         <p className="text-white font-bold text-xl mt-4">Photoshop</p>
@@ -238,7 +239,7 @@ export default function Artist() {
                 <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pt-8">
                     Previous Work Experience
                 </h2>
-                <div className="mx-auto lg:px-8 lg:mb-10 mb-1">
+                <div className="max-w-[1500px] mx-auto lg:px-8 lg:mb-10 mb-1">
                     <HoverEffect items={projects} />
                 </div>
 
@@ -404,13 +405,13 @@ const FlyerContent = () => {
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
-                <Image
+                {/* <Image
                     src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/hw_flyer.jpg"
                     alt="Flyer"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
-                />
+                /> */}
             </div>
         </>
     );
@@ -610,14 +611,14 @@ const MockupContent = () => {
                     professional mockups that will help you stand out from the competition.
                 </p>
                 <Image
-                    src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_mockup1.jpg"
+                    src="https://res.cloudinary.com/dreac336r/image/upload/v1734039955/Portfolio/mockup_cartoon_box.png"
                     alt="Mockup"
                     height="500"
                     width="500"
                     className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-8"
                 />
                 <Image
-                    src="https://res.cloudinary.com/dreac336r/image/upload/v1725863768/Portfolio/cwin_mockup2.jpg"
+                    src="https://res.cloudinary.com/dreac336r/image/upload/v1734039947/Portfolio/mockup_holder_box.png"
                     alt="Mockup"
                     height="500"
                     width="500"
