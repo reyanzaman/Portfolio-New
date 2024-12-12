@@ -285,20 +285,26 @@ const companies = [
     {
         title: "South-East University",
         description:
-            "A private university in Bangladesh where I worked with the Vice Chancellor on various projects.",
-        link: "https://collectwin.net/",
+            "A private university in Bangladesh where I worked with the Vice Chancellor on the palta question project.",
+        link: "https://new.seu.edu.bd/",
     },
     {
         title: "Independent University, Bangladesh",
         description:
-            "A private university in Bangladesh where I worked with the Center for Computational & Data Sciences Lab on research projects.",
-        link: "https://www.turbosquid.com/Search/Artists/ExtraVision",
+            "A private university in Bangladesh where I worked with the Center for Computational & Data Sciences Lab on various research projects.",
+        link: "https://ccds.ai/",
     },
     {
-        title: "Dhaka University",
+        title: "Data & Design Lab",
         description:
-            "A public university in Bangladesh where I worked with the Data & Design Lab on various projects.",
-        link: "https://naptechlabs.com/",
+            "A research lab in Dhaka University, a public university in Bangladesh where I worked with the team on various projects.",
+        link: "https://www.dndlab.org/",
+    },
+    {
+        title: "Collectwin",
+        description:
+            "A german augemented reality based mechandise company where I worked on automating the design process.",
+        link: "https://collectwin.net/",
     },
 ];
 
