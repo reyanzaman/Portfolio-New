@@ -143,7 +143,7 @@ export default function Developer() {
 
                         <div className="lg:pb-20 lg:pt-20 pb-16 pt-0">
                             <Link href="https://palta-q.com/" target="blank">
-                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none hover:text-indigo-200 duration-300">
                                     Palta Question
                                 </span>
                             </Link>
@@ -191,7 +191,7 @@ export default function Developer() {
                 <div className="lg:pb-20 lg:pt-20 pb-20 pt-20  text-center">
                     <h1 className="lg:text-2xl text-base font-semibold">
                         <Link href="https://colab.research.google.com/drive/1U4CGeMngyVgLcv2Fdpt9OVOP5cjpyLRo?usp=sharing" target="blank">
-                            <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none">
+                            <span className="text-4xl md:text-[6.3rem] font-bold mt-1 leading-none hover:text-indigo-200 duration-300">
                                 Data Canvas
                             </span>
                         </Link>
@@ -306,9 +306,56 @@ const companies = [
             "A german augemented reality based mechandise company where I worked on automating the design process.",
         link: "https://collectwin.net/",
     },
+    {
+        title: "Hereway International",
+        description:
+            "A Bangladeshi company focused on importing various hardwares and tools from all over the world.",
+        link: "https://hereway.vercel.app/",
+    },
+    {
+        title: "OPG",
+        description:
+            "A Bangladeshi company focused on providing online programming courses.",
+        link: "https://online-programming-global.com/",
+    },
 ];
 
 const Content = [
+    {
+        title: "Hereway International",
+        description: (
+            <>
+                <Link href="https://hereway.vercel.app/" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-60 font-bold">View Website</Link>
+                <br></br><br></br>
+                <p className="text-justify text-base">
+                    This project is a promotional website for Hereway International, a company that provides
+                    various services. The website has been designed with a fully functional admin panel
+                    that allows the admin to manage the website content easily. The website is built using
+                    Next.js and Tailwind CSS, making it responsive and user-friendly.
+                </p>
+            </>
+        ),
+        badge: "Next JS 14",
+        image:
+            "https://res.cloudinary.com/dreac336r/image/upload/v1747934332/Portfolio/hereway.png",
+    },
+    {
+        title: "Online Programming Global",
+        description: (
+            <>
+                <Link href="https://www.online-programming-global.com/" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-600 font-bold">View Website</Link>
+                <br></br><br></br>
+                <p className="text-justify text-base">
+                    A promotional website for an online programming learning course.
+                    It provides information about the course, its curriculum, and the instructors.
+                    The website is designed to be user-friendly and informative, making it easy for potential students to learn about the course.
+                </p>
+            </>
+        ),
+        badge: "Next JS 14",
+        image:
+            "https://res.cloudinary.com/dreac336r/image/upload/v1747934118/Portfolio/OPG.png",
+    },
     {
         title: "Shilpi Qayyum Chowdhury Foundation",
         description: (
@@ -322,9 +369,26 @@ const Content = [
                 </p>
             </>
         ),
-        badge: "Next JS",
+        badge: "Next JS 13",
         image:
             "https://res.cloudinary.com/dreac336r/image/upload/v1728706307/Portfolio/sqcf.png",
+    },
+
+    {
+        title: "Liberation War Museum Smart Learning Platform (Demo)",
+        description: (
+            <>
+                <p className="text-justify text-base">
+                    This project is a smart learning platform that allows children to learn
+                    about the history of Bangladesh&apos;s liberation war in an interactive
+                    way. It includes games, quizzes, and interactive lessons to engage
+                    children and help them learn about the history of Bangladesh.
+                </p>
+            </>
+        ),
+        badge: "UI/UX",
+        image:
+            "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/lwm-demo.png",
     },
     {
         title: "Bus Management System",
@@ -343,71 +407,5 @@ const Content = [
         badge: "UI/UX",
         image:
             "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/iubbms.png",
-    },
-    {
-        title: "Oitijjo",
-        description: (
-            <>
-                <p className="text-justify text-base">
-                    This website focuses on the culture and heritage of Bangladesh. It
-                    provides a platform for local artisans to showcase their work and sell
-                    their products. It is a multi vendor e-commerce platform with integrated
-                    3D model viewing capabilities for enhanced customer experience.
-                </p>
-            </>
-        ),
-        badge: "React",
-        image:
-            "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/oitijjo.png",
-    },
-    {
-        title: "PDF-GPT Chatbot",
-        description: (
-            <>
-                <Link href="https://github.com/reyanzaman/PDF-GPT-Chatbot" target="blank" className="pt-3 text-sm dark:text-indigo-300 text-indigo-60 font-bold">View Github Repository</Link>
-                <br></br><br></br>
-                <p className="text-justify text-base">
-                    This project is an extention to the GPT-3 chatbot that allows users to
-                    upload Bangla PDF files and ask questions in Bangla. The chatbot uses GPT-3
-                    to extract information from the PDF and provide answers to the user&apos;s
-                    questions in both Bangla and English language.
-                </p>
-            </>
-        ),
-        badge: "Next JS",
-        image:
-            "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/pdfchatbot.png",
-    },
-    {
-        title: "Liberation War Museum Smart Learning Platform (Demo)",
-        description: (
-            <>
-                <p className="text-justify text-base">
-                    This project is a smart learning platform that allows children to learn
-                    about the history of Bangladesh&apos;s liberation war in an interactive
-                    way. It includes games, quizzes, and interactive lessons to engage
-                    children and help them learn about the history of Bangladesh.
-                </p>
-            </>
-        ),
-        badge: "UI/UX",
-        image:
-            "https://res.cloudinary.com/dreac336r/image/upload/v1725894069/Portfolio/lwm-demo.png",
-    },
-    {
-        title: "QuBAN Question Classifier",
-        description: (
-            <>
-                <p className="text-justify text-base">
-                    This project uses Naive-Bayes algorithm to classifier between
-                    questions and non-questions. It is a simple text classifier that
-                    uses the Bag of Words model to classify questions based on the
-                    words used in the text.
-                </p>
-            </>
-        ),
-        badge: "Python",
-        image:
-            "https://res.cloudinary.com/dreac336r/image/upload/v1734040209/Portfolio/QuBAN_Classifier.png",
     },
 ];

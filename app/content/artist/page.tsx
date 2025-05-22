@@ -285,6 +285,18 @@ const projects = [
             "A lighting company that focuses on creating high-quality and energy-efficient lighting solutions for its customers.",
         link: "https://www.facebook.com/adexlighting",
     },
+    {
+        title: "Freelancer",
+        description:
+            "A competitive freelancing platform that connects clients with freelancers from around the world.",
+        link: "https://www.freelancer.com/u/reyanzaman",
+    },
+    {
+        title: "Hereway International",
+        description:
+            "A Bangladeshi company that focuses importing high-quality hardware and tools for its customers.",
+        link: "https://hereway.vercel.app/",
+    },
 ];
 
 const LogoContent = () => {

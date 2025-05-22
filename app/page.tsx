@@ -21,12 +21,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="items-center cursor-default justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)] overflow-x-hidden">
 
       <main className="p-8 lg:pt-10 pb-12 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:60px_60px]">
 
         <div className="lg:pb-16 pb-10">
-          <h1 className="lg:text-6xl text-3xl text-center">Welcome to my portfolio</h1>
+          <h1 className="lg:text-5xl text-3xl text-center">Welcome to my portfolio</h1>
           <h2 className="lg:text-2xl text-xl text-center lg:pt-4 pt-2">Pick your poison!</h2>
         </div>
 
@@ -35,7 +35,7 @@ export default function Home() {
           <Link href="/content/developer" className="w-full h-full">
             <div className="w-full h-full lg:pl-12 max-w-[45em]">
               <div className={cn(
-                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800 opacity-95",
+                "group w-full cursor-pointer overflow-hidden relative card lg:h-[45rem] h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-neutral-800",
                 "bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1725794319/Portfolio/coding_image.jpg)] bg-cover bg-center",
                 "before:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]",
                 "hover:bg-[url(https://res.cloudinary.com/dreac336r/image/upload/v1727221449/Portfolio/coding_1.gif)] hover:bg-center",
