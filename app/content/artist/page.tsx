@@ -7,7 +7,6 @@ import { FloatingDock } from "@/app/component/dock";
 import {
   IconMail,
   IconHome,
-  IconPhoto,
   IconTerminal2,
   IconFileSpark,
   IconBrandYoutube,
@@ -396,7 +395,7 @@ const PackagingContent = () => {
           </span>{" "}
           It helps establish a memorable identity, enhances perceived quality,
           and creates a strong first impression. I can assist you in developing
-          custom packaging concepts that reflect your brand&apos;s style and
+          custom packaging concepts that reflect your brand style and
           communicate its values clearly. Below, you will find examples of
           branded packaging work created for previous clients.
         </p>

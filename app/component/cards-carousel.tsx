@@ -5,6 +5,7 @@ import React, {
   useState,
   createContext,
   useContext,
+  useCallback,
 } from "react";
 import {
   IconArrowNarrowLeft,
@@ -42,20 +43,20 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const [canScrollRight, setCanScrollRight] = React.useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft = initialScroll;
-      checkScrollability();
-    }
-  }, [initialScroll]);
-
-  const checkScrollability = () => {
+  const checkScrollability = useCallback(() => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
       setCanScrollLeft(scrollLeft > 0);
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = initialScroll;
+      checkScrollability();
+    }
+  }, [initialScroll, checkScrollability]);
 
   const scrollLeft = () => {
     if (carouselRef.current) {
@@ -69,6 +70,10 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
+  const isMobile = () => {
+    return typeof window !== "undefined" && window.innerWidth < 768;
+  };
+
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
       const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
@@ -80,10 +85,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       });
       setCurrentIndex(index);
     }
-  };
-
-  const isMobile = () => {
-    return window && window.innerWidth < 768;
   };
 
   return (
@@ -166,6 +167,15 @@ export const Card = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const { onCardClose } = useContext(CarouselContext);
 
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = useCallback(() => {
+    setOpen(false);
+    onCardClose(index);
+  }, [onCardClose, index]);
+
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -181,18 +191,9 @@ export const Card = ({
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
+  }, [open, handleClose]);
 
-  useOutsideClick(containerRef, () => handleClose());
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
-  };
+  useOutsideClick(containerRef, handleClose);
 
   return (
     <>
