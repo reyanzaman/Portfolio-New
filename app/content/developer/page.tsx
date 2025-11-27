@@ -44,14 +44,14 @@ export default function Developer() {
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/reyanzaman",
         },
         {
             title: "Resume",
             icon: (
                 <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
-            href: "https://drive.google.com/file/d/1kX6l8bA608t-J-is9584Ml-jz_jdvH_4/view?usp=sharing",
+            href: "https://drive.google.com/file/d/1VyinKWZ3rermhPR9-npKuJvtaR5xKkBs/view?usp=sharing",
         },
         {
             title: "Contact",
