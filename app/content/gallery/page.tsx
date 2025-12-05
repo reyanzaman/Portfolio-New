@@ -75,7 +75,7 @@ export default function Gallery() {
             icon: (
                 <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
-            href: "https://drive.usercontent.google.com/u/0/uc?id=1ckMiBv5IsVxjmFr_eBD5hAJ5BPCDDA4v&export=download",
+            href: "https://drive.google.com/file/d/1fqTZKDVg96ZRb5Cl_SDyyfkzEc9W5Cas/view?usp=sharing",
         },
         {
             title: "Contact",
