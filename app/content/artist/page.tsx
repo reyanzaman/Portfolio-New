@@ -85,7 +85,7 @@ export default function Artist() {
     {
       title: "Resume",
       icon: <IconFileSpark className="h-full w-full text-neutral-300" />,
-      href: "https://drive.google.com/file/d/1fqTZKDVg96ZRb5Cl_SDyyfkzEc9W5Cas/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1Xm0lFCML68C_ebhI93krSBa2TMOrPu59/view?usp=sharing",
     },
     {
       title: "Contact",
