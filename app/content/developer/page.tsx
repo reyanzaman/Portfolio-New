@@ -51,7 +51,7 @@ export default function Developer() {
             icon: (
                 <IconFileSpark className="h-full w-full text-neutral-300" />
             ),
-            href: "https://drive.google.com/file/d/13EOLNLQ2wI-KAiEiKSTdlGeuCo74Tpt5/view?usp=sharing",
+            href: "https://drive.google.com/file/d/17qgivkbUnkermME4DL8hLVyYnVpxp3vd/view?usp=sharing",
         },
         {
             title: "Contact",
